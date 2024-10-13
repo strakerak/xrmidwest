@@ -73069,6 +73069,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: estrellitaaa
       objectReference: {fileID: 0}
+    - target: {fileID: 7641128174505741026, guid: 4743abde269a06f478fda5b1ad4b072b,
+        type: 3}
+      propertyPath: playerHead
+      value: 
+      objectReference: {fileID: 983126556}
+    - target: {fileID: 7641128174505741026, guid: 4743abde269a06f478fda5b1ad4b072b,
+        type: 3}
+      propertyPath: releaseDistance
+      value: 20
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
