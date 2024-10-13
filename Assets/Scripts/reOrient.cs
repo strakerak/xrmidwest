@@ -11,6 +11,7 @@ public class reOrient : MonoBehaviour
     public GameObject holder;
     public GameObject origin;
 
+    ClimbUp cu;
 
     float x;
     float y;
@@ -19,28 +20,30 @@ public class reOrient : MonoBehaviour
     bool reOrients = false;
     void Start()
     {
-        
+        cu = origin.GetComponent<ClimbUp>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        //reOrienter();
     }
 
     void reOrienter()
     {
-        if (reOrients)
+        if(reOrients)
         {
             if (this.gameObject.name == "Left Controller")
             {
                 controller.transform.eulerAngles = new Vector3(0f, 0f, 0f);
+                cu.leftRotThresh = holder.transform.eulerAngles.z + 90f;
 
 
             }
             else if (this.gameObject.name == "Right Controller")
             {
                 controller.transform.eulerAngles = new Vector3(0f, 0f, 0f);
+                cu.rightRotThresh = holder.transform.eulerAngles.z - 90f;
 
             }
             else

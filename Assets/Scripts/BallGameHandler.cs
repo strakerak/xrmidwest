@@ -41,15 +41,15 @@ public class BallGameHandler : MonoBehaviour
         tempInterval = interval;
 
         intervalText.text = "Interval: " + interval.ToString();
-        forceText.text = "Speed: " + (force / 1000).ToString();
-        goalText.text = "Goal: " + goal.ToString();
+        forceText.text = "Speed: " + (force/1000).ToString();
+        goalText.text = "Goal: " +  goal.ToString();
         limitText.text = "Away Limit: " + awayLimit.ToString();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (timer < interval)
+        if(timer<interval)
         {
             timer += Time.deltaTime;
         }
@@ -60,11 +60,11 @@ public class BallGameHandler : MonoBehaviour
             timer = 0f;
         }
 
-        if (score > goal)
+        if(score>goal)
         {
             interval = 0f;
             yayTimer += Time.deltaTime;
-            if (yayTimer > 5f)
+            if(yayTimer > 5f)
             {
                 score = 0;
                 interval = tempInterval;
@@ -73,16 +73,16 @@ public class BallGameHandler : MonoBehaviour
             }
         }
 
-        if (awayScore > awayLimit)
+        if(awayScore>awayLimit)
         {
-            //SceneManager.LoadScene("Menu");
+            SceneManager.LoadScene("Menu");
         }
 
         scoreDisplay.text = $"Home - {score} || {awayScore} - Away";
 
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            //SceneManager.LoadScene("Menu");
+            SceneManager.LoadScene("Menu");
         }
     }
 
@@ -93,26 +93,26 @@ public class BallGameHandler : MonoBehaviour
         interval = value;
         tempInterval = value;
     }
-
+    
     public void forceSliderChange(float value)
     {
         float localValue = value;
         forceText.text = "Speed: " + (localValue / 1000).ToString("0.00");
         force = value;
     }
-
+    
     public void goalSliderChange(float value)
     {
         float localValue = value;
         goalText.text = "Score: " + localValue.ToString("0.00");
-        goal = (int)value;
+        goal = (int) value;
     }
 
     public void awayLimitChange(float value)
     {
         float localValue = value;
         limitText.text = "Away Limit: " + localValue.ToString("0.00");
-        awayLimit = (int)value;
+        awayLimit = (int) value;
     }
 
     void deleteBalls()
