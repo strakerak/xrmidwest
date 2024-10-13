@@ -16,6 +16,11 @@ public class MenuButtonScript : MonoBehaviour
         SceneManager.LoadScene("RocksUp");
     }
 
+    public void LoadStars()
+    {
+        SceneManager.LoadScene("Stargaze");
+    }
+
     public void LoadWhackAMole()
     {
         SceneManager.LoadScene("WhackaMole");
@@ -23,17 +28,11 @@ public class MenuButtonScript : MonoBehaviour
 
     public void LoadBalls()
     {
-        SceneManager.LoadScene("TennisScene");
+        SceneManager.LoadScene("Balls");
     }
-
 
     public void LoadCity()
     {
         SceneManager.LoadScene("City");
-    }
-
-    public void LoadStars()
-    {
-        SceneManager.LoadScene("Stargaze");
-    }
+    }    
 }

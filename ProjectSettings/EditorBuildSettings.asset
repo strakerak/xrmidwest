@@ -11,7 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/WhackaMole.unity
     guid: 8159d4139ca75a04eb5fc0d8da89b7e4
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TennisScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
@@ -23,6 +23,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/City.unity
     guid: b80f18dce76bb2a4eadb668cd1cde34a
+  - enabled: 1
+    path: Assets/Scenes/Balls.unity
+    guid: 2168c47041dcaef4488a3e2ab6761175
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 969d452164fcf2c4a88c59227e21795d,
       type: 2}

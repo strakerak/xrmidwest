@@ -2,6 +2,7 @@ using NaughtyAttributes;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class starMaker : MonoBehaviour
 {
@@ -20,6 +21,11 @@ public class starMaker : MonoBehaviour
         {
             GameObject s = Instantiate(star, transform.position, Quaternion.identity);
             s.SetActive(true);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            SceneManager.LoadScene("Menu");
         }
     }
 

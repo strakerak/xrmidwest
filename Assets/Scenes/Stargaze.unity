@@ -9074,9 +9074,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9f2b32b153016c44bdb78193d8f7142, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controller: {fileID: 536509125}
-  holder: {fileID: 288309049}
-  origin: {fileID: 2110442213}
 --- !u!114 &288309057
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16227,39 +16224,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 824b8e1b5c7ae6b4baca8264961ca8e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pinchAnimationAction:
-    m_UseReference: 1
-    m_Action:
-      m_Name: Pinch Animation
-      m_Type: 0
-      m_ExpectedControlType: 
-      m_Id: 94184ff7-dc73-4ec7-88ea-5a8830dd98a3
-      m_Processors: 
-      m_Interactions: 
-      m_SingletonActionBindings: []
-      m_Flags: 0
-    m_Reference: {fileID: 83097790271614945, guid: c348712bda248c246b8c49b3db54643f,
-      type: 3}
-  gripAnimationAction:
-    m_UseReference: 1
-    m_Action:
-      m_Name: Grip Animation
-      m_Type: 0
-      m_ExpectedControlType: 
-      m_Id: 1157494a-6fec-4a53-af21-fc912308651c
-      m_Processors: 
-      m_Interactions: 
-      m_SingletonActionBindings: []
-      m_Flags: 0
-    m_Reference: {fileID: 187161793506945269, guid: c348712bda248c246b8c49b3db54643f,
-      type: 3}
-  handAnimator: {fileID: 522198522}
---- !u!95 &522198522 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 5686134208192617028, guid: 1fd3a7c43c8190f4d8c167ebde694364,
-    type: 3}
-  m_PrefabInstance: {fileID: 522198518}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &524609784 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 36c19dcadc6accf4f816ecff12d64cc7,
@@ -34372,9 +34336,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9f2b32b153016c44bdb78193d8f7142, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controller: {fileID: 705652681}
-  holder: {fileID: 1052824539}
-  origin: {fileID: 2110442213}
 --- !u!135 &1052824547
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -38584,7 +38545,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 1c9a6db6e08a00642aa8fcab7b368825, type: 2}
+  - {fileID: 2100000, guid: 366524f085ef6af4c91a09d0dca9499a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -45248,39 +45209,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 824b8e1b5c7ae6b4baca8264961ca8e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pinchAnimationAction:
-    m_UseReference: 1
-    m_Action:
-      m_Name: Pinch Animation
-      m_Type: 0
-      m_ExpectedControlType: 
-      m_Id: 8d65bb91-8f4e-40be-85b2-7a5aabd5ce8c
-      m_Processors: 
-      m_Interactions: 
-      m_SingletonActionBindings: []
-      m_Flags: 0
-    m_Reference: {fileID: -5982496924579745919, guid: c348712bda248c246b8c49b3db54643f,
-      type: 3}
-  gripAnimationAction:
-    m_UseReference: 1
-    m_Action:
-      m_Name: Grip Animation
-      m_Type: 0
-      m_ExpectedControlType: 
-      m_Id: d2d218f2-ab24-4d9a-9ddc-caa3a08ac283
-      m_Processors: 
-      m_Interactions: 
-      m_SingletonActionBindings: []
-      m_Flags: 0
-    m_Reference: {fileID: -6131295136447488360, guid: c348712bda248c246b8c49b3db54643f,
-      type: 3}
-  handAnimator: {fileID: 1384287359}
---- !u!95 &1384287359 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 109434732388006827, guid: 65847589f926b734d9eaed6e25f0046b,
-    type: 3}
-  m_PrefabInstance: {fileID: 1384287355}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1385048698 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 36c19dcadc6accf4f816ecff12d64cc7,
